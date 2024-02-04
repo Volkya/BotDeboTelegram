@@ -55,11 +55,11 @@ def command_ayuda(m): # Definimos una función que resuleva lo que necesitemos.
 
     # se ejecute, la ayuda que hemos definido encima del listener anteriormente. Si por ejemplo no 
     # quisiéramos hacer flood de mensajes en un grupo podemos cambiar el cid por:
-    # uid = m.from_user.id
+    uid = m.from_user.id
     # Con esto lo que haremos es que cuando pongamos /ayuda se nos envié la información a nuestro chat privado
     # hay que iniciar por privado primeramente el bot.
-    # bot.send_message( uid, AYUDA)
-    # bot.send_message( cid, «Se te ha enviado la información por privado»)
+    bot.send_message( uid, AYUDA)
+    bot.send_message( cid, «Se te ha enviado la información por privado»)
     # De esta manera aparte de enviar la información por privado, lo notificaríamos por el grupo.
 
     bot.send_chat_action(cid, 'typing') # Enviando ...
