@@ -81,8 +81,6 @@ def command_info(m): # Definimos una función que resuleva lo que necesitemos.
 
     if cid == GRUPO:
 
-        
-
             bot.send_message( GRUPO, 'mensaje A') # Con la función 'send_message()' del bot, enviamos al ID almacenado el texto que queremos.
 
     else :
